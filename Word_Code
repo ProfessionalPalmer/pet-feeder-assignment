@@ -11,11 +11,11 @@ NO (No Food in dispenser)
   NO (No Food in dispenser)
     2 second delay – Delays the program for two seconds 
     Return to line 10
-    YES (Food in dispenser)
-    Return to line 6
   YES (Food in dispenser)
-   Weight sensor same weight after 10 minutes? – The pet hasn’t eaten.
-  YES { (Weight sensor at same value)
+    Return to line 6
+YES (Food in dispenser)
+  Weight sensor same weight after 10 minutes? – The pet hasn’t eaten.
+  YES (Weight sensor at same value)
     Send alert – Sends an alert to the staff through an app on their phone with the message ‘Pet not eating’.    
   NO (Weight sensor value changed)
    End
