@@ -1,0 +1,21 @@
+Start
+Enter Feed Time 1 – The Staff enters the first feeding time into the feeder.
+Enter Feed Time 2 – The Staff enters the second feeding time into the feeder.
+Enter Food Weight – The Staff enters the weight of food in grams into the feeder.
+At feed time 1 and 2 (The first and second feed time entered by staff)
+Run motor to dispense food – dispenses food from the dispenser to the bowl.
+Is there food in the dispenser? – Checks if there is food in the dispenser.
+NO (No Food in dispenser)
+  Send alert – Sends an alert to the staff through an app on their phone with the message ‘No food in the dispenser’.    
+  Is there food in the dispenser? – Checks if there is food in the dispenser.
+  NO (No Food in dispenser)
+    2 second delay – Delays the program for two seconds 
+    Return to line 10
+    YES (Food in dispenser)
+    Return to line 6
+  YES (Food in dispenser)
+   Weight sensor same weight after 10 minutes? – The pet hasn’t eaten.
+  YES { (Weight sensor at same value)
+    Send alert – Sends an alert to the staff through an app on their phone with the message ‘Pet not eating’.    
+  NO (Weight sensor value changed)
+   End
